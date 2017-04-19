@@ -1,0 +1,30 @@
+body {
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.sedona-town {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.vantage {
+  color:#000;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.attraction {
+  font-size: 21px;
+}
+
+.look {
+  color:#000;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: bold;
+}

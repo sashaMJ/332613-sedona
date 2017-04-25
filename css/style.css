@@ -1,15 +1,76 @@
 body {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "PT Sans", Arial, sans-serif;
   color: black;
   font-size: 14px;
+  text-transform: uppercase;
   line-height: 21px;
   font-weight: bold;
 }
 
-.sedona-town {
+/* Шапка */
+header .container {
+  display: flex;
+  justify-content: space-around;
+  min-height: 58px;
+}
+
+.main-navigation ul {
+  margin: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 242px;
+  margin: 0;
+  line-height: 26px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Основное содержание главное страницы*/
+.sedona-town-container {
+  height: 212px;
+  text-align: center;
+}
+
+.sedona-town-text {
   font-size: 21px;
   line-height: 26px;
 }
+
+:not(footer) span {
+  color: white;
+}
+
+p {
+  font-weight: normal;
+}
+
+.white-text {
+  color:white;
+}
+
+.real-city{
+  margin-right:0;
+}
+
+.real-city div {
+  display: inline-block;
+  vertical-align: top;
+  height:256px;
+  width: 400px;
+  background-color:#81b3d2;
+}
+
+
+
 
 .vantage {
   color: white;

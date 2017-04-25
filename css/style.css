@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   font-family: "PT Sans", Arial, sans-serif;
@@ -10,11 +10,20 @@ body {
   font-weight: bold;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* Шапка */
-header .container {
-  display: flex;
-  justify-content: space-around;
-  min-height: 58px;
+.logotip {
+  position: absolute;
+  margin-left: 537px;
+  margin-top: -58px;
+}
+
+.main-navigation {
+  height: 58px;
 }
 
 .main-navigation ul {
@@ -23,10 +32,19 @@ header .container {
 
 .main-navigation li {
   display: inline-block;
+  text-align: center;
   vertical-align: middle;
   width: 242px;
   margin: 0;
   line-height: 26px;
+}
+
+ul li.third-child {
+  margin-left: 181px;
+}
+
+ul li.first-child {
+  margin-left: -22px;
 }
 
 a {
@@ -45,36 +63,27 @@ a {
   line-height: 26px;
 }
 
-:not(footer) span {
-  color: white;
-}
-
 p {
   font-weight: normal;
 }
 
-.white-text {
-  color:white;
-}
-
-.real-city{
-  margin-right:0;
-}
-
-.real-city div {
-  display: inline-block;
-  vertical-align: top;
-  height:256px;
-  width: 400px;
-  background-color:#81b3d2;
-}
-
-
-
-
-.vantage {
+.bridge,
+.real-city {
   color: white;
-  font-size: 21px;
+}
+
+.real-city,
+.bridge {
+  display: flex;
+  justify-content: flex-start
+}
+
+.real-city-left-column,
+.bridge-right-column {
+  vertical-align: top;
+  height: 256px;
+  width: 33%;
+  background-color: #81b3d2;
 }
 
 .attraction {
@@ -82,7 +91,61 @@ p {
   font-size: 21px;
 }
 
+.image-real-city,
+.image-bridge {
+  width: 66%;
+  height: 256px;
+  overflow: hidden;
+}
+
+.advantage {
+  background-color: #eeeeee;
+  height: 330px;
+}
+
+.home,
+.food,
+.souvenirs {
+  text-align: center;
+  display: inline-block;
+  width: 33%;
+}
+
+.vantage {
+  font-size: 21px;
+}
+
+.road,
+.tourist,
+.area {
+  text-align: center;
+  display: inline-block;
+  width: 33%;
+}
+
+/*Поиск гостиницы в Седоне*/
+.search-hotel {
+  text-align: center;
+  height: 291px;
+}
+
 .look {
   font-size: 30px;
   line-height: 24px;
 }
+
+/*Подвал*/
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  height: 120px;
+}
+
+.visit,
+.footer-social,
+.copyright {
+  width: 400px;
+  text-align: center;
+}
+
+

@@ -19,16 +19,17 @@ body {
 .logotype {
   position: absolute;
   top: 0;
-  left: 776px;
+  left: 533px;
 }
 
-.main-navigation {
+.main-header {
   position: relative;
 }
 
 .main-navigation ul {
   margin: 0;
   padding-left: 0;
+  font-size: 0;
 }
 
 .main-navigation li {
@@ -38,6 +39,7 @@ body {
   width: 242px;
   padding-top: 30px;
   line-height: 26px;
+  font-size: 14px;
 }
 
 ul li.third-child {
@@ -95,9 +97,15 @@ p {
   overflow: hidden;
 }
 
-.advantage {
+.advantage1 {
+  height: 330px;
+  font-size: 0;
+}
+
+.advantage2 {
   background-color: #eeeeee;
   height: 330px;
+  font-size: 0;
 }
 
 .home,
@@ -105,7 +113,8 @@ p {
 .souvenirs {
   text-align: center;
   display: inline-block;
-  width: 33%;
+  width: 33.33333%;
+  font-size: 14px;
 }
 
 .vantage {
@@ -117,7 +126,8 @@ p {
 .area {
   text-align: center;
   display: inline-block;
-  width: 33%;
+  width: 33.33333%;
+  font-size: 14px;
 }
 
 /*Поиск гостиницы в Седоне*/
@@ -129,6 +139,103 @@ p {
 .look {
   font-size: 30px;
   line-height: 24px;
+}
+
+/*Внутренняя страница*/
+fieldset {
+  display: inline-block;
+  border: none;
+  font-size: 0;
+}
+
+legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+label {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.sorter {
+  background-image: url(../img/filter-background.jpg);
+  color: white;
+  display: inline-block;
+  width: 100%;
+}
+
+.sorter-hotel-right-column {
+  float: right;
+  width: 388px;
+}
+
+.sorter-hotel-left-column {
+  float: left;
+  width: 330px;
+  padding-top: 74px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  display: block;
+}
+
+.sorter3 {
+  font-size: 0;
+}
+
+.sorter3 li {
+  font-size: 12px;
+}
+
+.sorter3 h2, .sorter3 ul, .sorter3 li {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*Гостиницы*/
+
+.hotel1 {
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.hotel2, .hotel3 {
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.hotel-image {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+}
+
+.hotel-discription {
+  display: inline-block;
+  vertical-align: middle;
+  width: 225px;
+  padding-bottom: 37px;
+  padding-left: 22px;
+  font-size: 0;
+}
+
+.discription-text {
+  font-size: 14px;
+}
+
+.stars-rating {
+  display: inline-block;
+  width: 109px;
+  padding-left: 630px;
 }
 
 /*Подвал*/
@@ -145,4 +252,8 @@ p {
   text-align: center;
 }
 
+.visit {
+  font-size: 21px;
+  font-weight: bold;
+}
 

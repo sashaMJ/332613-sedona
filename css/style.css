@@ -145,7 +145,6 @@ p {
 fieldset {
   display: inline-block;
   border: none;
-  font-size: 0;
 }
 
 legend {
@@ -163,6 +162,7 @@ label {
   color: white;
   display: inline-block;
   width: 100%;
+  font-size: 0;
 }
 
 .sorter-hotel-right-column {
@@ -192,12 +192,12 @@ input {
 
 .sorter3 li {
   font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .sorter3 h2, .sorter3 ul, .sorter3 li {
   display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 /*Гостиницы*/
@@ -205,10 +205,12 @@ input {
 .hotel1 {
   border-top: 2px solid #e5e5e5;
   border-bottom: 2px solid #e5e5e5;
+  font-size: 0;
 }
 
 .hotel2, .hotel3 {
   border-bottom: 2px solid #e5e5e5;
+  font-size: 0;
 }
 
 .hotel-image {
@@ -222,10 +224,10 @@ input {
 .hotel-discription {
   display: inline-block;
   vertical-align: middle;
-  width: 225px;
+  width: 300px;
   padding-bottom: 37px;
   padding-left: 22px;
-  font-size: 0;
+  font-size: 14px;
 }
 
 .discription-text {
@@ -234,8 +236,9 @@ input {
 
 .stars-rating {
   display: inline-block;
+  float: right;
   width: 109px;
-  padding-left: 630px;
+  font-size: 14px;
 }
 
 /*Подвал*/

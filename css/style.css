@@ -15,6 +15,11 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Шапка */
 .logotype {
   position: absolute;
@@ -42,18 +47,13 @@ body {
   font-size: 14px;
 }
 
-ul li.third-child {
+.main-navigation li.third-child {
   margin-left: 221px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
 }
 
 /*Основное содержание главное страницы*/
 .sedona-town-container {
-  padding-top: 70px;
+  padding-top: 96px;
   text-align: center;
 }
 
@@ -62,7 +62,8 @@ a {
   line-height: 26px;
 }
 
-p {
+.advantage1 p,
+.advantage2 p {
   font-weight: normal;
   padding-left: 55px;
   padding-right: 55px;
@@ -79,11 +80,17 @@ p {
   justify-content: flex-start;
 }
 
-.real-city-left-column,
+.real-city-left-column {
+  vertical-align: top;
+  height: 255px;
+  width: 403px;
+  background-color: #81b3d2;
+}
+
 .bridge-right-column {
   vertical-align: top;
   height: 256px;
-  width: 34%;
+  width: 400px;
   background-color: #81b3d2;
 }
 
@@ -92,10 +99,15 @@ p {
   font-size: 21px;
 }
 
-.image-real-city,
+.image-real-city {
+  width: 800px;
+  height: 255px;
+  overflow: hidden;
+}
+
 .image-bridge {
-  width: 66%;
-  height: 256px;
+  width: 800px;
+  height: 254px;
   overflow: hidden;
 }
 
@@ -106,7 +118,7 @@ p {
 
 .advantage2 {
   background-color: #eeeeee;
-  height: 330px;
+  height: 256px;
   font-size: 0;
 }
 
@@ -135,7 +147,7 @@ p {
 /*Поиск гостиницы в Седоне*/
 .search-hotel {
   text-align: center;
-  height: 291px;
+  height: 267px;
 }
 
 .look {
@@ -144,17 +156,18 @@ p {
 }
 
 /*Внутренняя страница*/
-fieldset {
+.sorter1,
+.sorter2 {
   display: inline-block;
   border: none;
 }
 
-legend {
+.sorter1 legend, .sorter2 legend {
   font-size: 16px;
   font-weight: bold;
 }
 
-label {
+.sorter label {
   font-size: 14px;
   font-weight: normal;
 }
@@ -184,7 +197,7 @@ label {
   clear: both;
 }
 
-input {
+.sorter input {
   display: block;
 }
 

@@ -64,6 +64,8 @@ a {
 
 p {
   font-weight: normal;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .bridge,
@@ -259,4 +261,3 @@ input {
   font-size: 21px;
   font-weight: bold;
 }
-

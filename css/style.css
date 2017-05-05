@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
 }
@@ -25,6 +26,7 @@ a {
   position: absolute;
   top: 0;
   left: 533px;
+  z-index: 1;
 }
 
 .main-header {
@@ -32,7 +34,7 @@ a {
 }
 
 .main-navigation ul {
-  margin: 0;
+  margin-bottom: 2px;
   padding-left: 0;
   font-size: 0;
 }
@@ -40,20 +42,28 @@ a {
 .main-navigation li {
   display: inline-block;
   text-align: center;
-  vertical-align: middle;
-  width: 242px;
-  padding-top: 30px;
-  line-height: 26px;
-  font-size: 14px;
+  width: 20%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .main-navigation li.third-child {
-  margin-left: 221px;
+  margin-left: 240px;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 /*Основное содержание главное страницы*/
-.sedona-town-container {
-  padding-top: 96px;
+.sedona-town {
+  padding-bottom: 39px;
+  padding-top: 39px;
   text-align: center;
 }
 
@@ -62,11 +72,9 @@ a {
   line-height: 26px;
 }
 
-.advantage1 p,
-.advantage2 p {
+.sedona-town p {
+  padding-top: 19px;
   font-weight: normal;
-  padding-left: 55px;
-  padding-right: 55px;
 }
 
 .bridge,
@@ -81,45 +89,59 @@ a {
 }
 
 .real-city-left-column {
-  vertical-align: top;
   height: 255px;
   width: 403px;
   background-color: #81b3d2;
 }
 
-.bridge-right-column {
-  vertical-align: top;
-  height: 256px;
-  width: 400px;
-  background-color: #81b3d2;
+.real-city-text {
+  width: 300px;
+  text-align: -webkit-center;
+  margin-left: 52px;
 }
 
-.attraction {
+.image-real-city {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  height: 256px;
+  overflow: hidden;
+}
+
+.real-city-text p {
+  margin-top: 21px;
+}
+
+.real-city-text h2 {
+  width: 125px;
+  margin-top: 49px;
+  margin-bottom: 25px;
   color: white;
   font-size: 21px;
 }
 
-.image-real-city {
-  width: 800px;
-  height: 255px;
-  overflow: hidden;
+.real-city-text span {
+  position: relative;
 }
 
-.image-bridge {
-  width: 800px;
-  height: 254px;
-  overflow: hidden;
+.real-city-text span::after {
+  content: "";
+  position: absolute;
+  right: 27px;
+  top: 9px;
+  width: 9px;
+  height: 1px;
+  background-color: white;
 }
 
-.advantage1 {
-  height: 330px;
-  font-size: 0;
-}
-
-.advantage2 {
-  background-color: #eeeeee;
-  height: 256px;
-  font-size: 0;
+.real-city-text span::before {
+  content: "";
+  position: absolute;
+  right: -14px;
+  top: 9px;
+  width: 9px;
+  height: 1px;
+  background-color: white;
 }
 
 .home,
@@ -131,8 +153,92 @@ a {
   font-size: 14px;
 }
 
-.vantage {
+.home {
+  background: url(../img/home.png) no-repeat 164px 61px;
+}
+
+.food {
+  background: url(../img/food.png) no-repeat 164px 61px;
+}
+
+.souvenirs {
+  background: url(../img/suvenir.png) no-repeat 170px 58px;
+}
+
+.advantage1 {
+  height: 330px;
+  font-size: 0;
+}
+
+.vantage h2 {
   font-size: 21px;
+}
+
+.advantage1 h2 {
+  padding-top: 144px;
+}
+
+.advantage1 p {
+  font-weight: normal;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 6px;
+}
+
+.bridge-right-column {
+  height: 256px;
+  width: 400px;
+  background-color: #81b3d2;
+}
+
+.image-bridge {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  height: 255px;
+  overflow: hidden;
+}
+
+.bridge-text {
+  width: 300px;
+  text-align: -webkit-center;
+  margin-left: 56px;
+  padding-top: 29px;
+}
+
+.bridge-right-column h2 {
+  margin-bottom: 25px;
+  color: white;
+  font-size: 21px;
+}
+
+.bridge-text p {
+  margin-top: 22px;
+  padding-right: 9px;
+}
+
+.bridge-text span {
+  position: relative;
+}
+
+.bridge-text span::after {
+  content: "";
+  position: absolute;
+  right: -13px;
+  top: 10px;
+  width: 9px;
+  height: 1px;
+  background-color: white;
+}
+
+.bridge-text span::before {
+  content: "";
+  position: absolute;
+  right: 26px;
+  top: 10px;
+  width: 9px;
+  height: 1px;
+  background-color: white;
 }
 
 .road,
@@ -142,6 +248,52 @@ a {
   display: inline-block;
   width: 33.33333%;
   font-size: 14px;
+  padding-top: 30px;
+}
+
+.advantage2 {
+  background-color: #eeeeee;
+  height: 256px;
+  font-size: 0;
+}
+
+.advantage2 p {
+  font-weight: normal;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 6px;
+}
+
+.advantage2 h2 {
+  width: 160px;
+  margin-left: 120px;
+  margin-top: 18px;
+  margin-bottom: 26px;
+}
+
+.advantage2 span {
+  position: relative;
+  padding-left: 5px;
+}
+
+.advantage2 span::after {
+  content: "";
+  position: absolute;
+  right: 26px;
+  top: 8px;
+  width: 7px;
+  height: 1px;
+  background-color: black;
+}
+
+.advantage2 span::before {
+  content: "";
+  position: absolute;
+  right: -14px;
+  top: 9px;
+  width: 9px;
+  height: 1px;
+  background-color: black;
 }
 
 /*Поиск гостиницы в Седоне*/
@@ -153,7 +305,181 @@ a {
 .look {
   font-size: 30px;
   line-height: 24px;
+  padding-top: 34px;
+  padding-bottom: 4px;
 }
+
+.search-hotel p {
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.search-hotel button[type="button"] {
+  display: block;
+  margin-top: 47px;
+  margin-left: 315px;
+  padding-bottom: 28px;
+  padding-top: 30px;
+  padding-right: 117px;
+  padding-left: 117px;
+  background-color: #766357;
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: inherit;
+}
+
+.search-hotel form {
+  position: absolute;
+  width: 569px;
+  height: 396px;
+  margin-left: 317px;
+  background-color: white;
+  color: black;
+}
+
+.wrap-form {
+  padding: 54px 53px 30px 53px;
+}
+
+.search-hotel .all input {
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  font-weight: bold;
+}
+
+.form-block {
+  position: relative;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.search-hotel .form-rs-adults label {
+  margin-right: 39px;
+}
+
+.search-hotel .form-rs-child label {
+  margin-right: 25px;
+}
+
+.search-hotel button[type="submit"] {
+  display: block;
+  height: 56px;
+  width: 458px;
+  margin-top: 64px;
+  color: white;
+  margin-left: 56px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: inherit;
+  text-transform: inherit;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.search-hotel .form-block input {
+  height: 35px;
+  width: 75%;
+  background-color: #f2f2f2;
+  border: none;
+  font-family: inherit;
+}
+
+.search-hotel .form-rs-adults input,
+.search-hotel .form-rs-child input {
+  height: 34px;
+  width: 112px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: none;
+  font-family: inherit;
+}
+
+.search-hotel .form-block label {
+  display: inline-block;
+  width: 23%;
+}
+
+.form-rs-adults {
+  position: relative;
+  float: left;
+}
+
+.form-rs-child {
+  position: relative;
+  float: right;
+}
+
+.search-hotel input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  font-weight: bold;
+  padding-left: 12px;
+  text-transform: uppercase;
+}
+
+.wrap-form .calendar {
+  position: absolute;
+  bottom: 39px;
+  right: 12px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/calendar.png);
+}
+
+.wrap-form .minus {
+  position: absolute;
+  bottom: 11px;
+  right: 92px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/minus.png);
+  background-repeat: no-repeat;
+}
+
+.wrap-form .plus {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/plus.png);
+  background-repeat: no-repeat;
+}
+
+.wrap-form .form-block input:hover {
+  background-color: #ebebeb;
+}
+
+.wrap-form .form-block input:focus {
+  outline: none;
+  background-color: white;
+  border: 3px solid #e5e5e5;
+}
+
+.wrap-form .minus:hover { background-image: url(../img/minus-hover.png); }
+
+.wrap-form .minus:active { background-image: url(../img/minus-active.png); }
+
+.wrap-form .plus:hover { background-image: url(../img/plus-hover.png); }
+
+.wrap-form .plus:active { background-image: url(../img/plus-active.png); }
+
+.wrap-form .calendar:hover { background-image: url(../img/calendar-hover.png); }
+
+.wrap-form .calendar:active { background-image: url(../img/calendar-active.png); }
+
+.search-hotel button[type="submit"]:hover { background-color: #669ec0; }
+
+.search-hotel button[type="submit"]:active { background-color: #5496bd; color:#88b6d1; }
 
 /*Внутренняя страница*/
 .sorter1,
@@ -257,12 +583,6 @@ a {
 }
 
 /*Подвал*/
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-  height: 120px;
-}
-
 .visit,
 .footer-social,
 .copyright {
@@ -274,3 +594,92 @@ a {
   font-size: 21px;
   font-weight: bold;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.copyright a {
+  background-image: url(../img/logo-htmlacademy.png);
+  background-repeat: no-repeat;
+  padding-right: 114px;
+  padding-bottom: 22px;
+  padding-top: 12px;
+
+}
+
+.copyright span {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3px;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 126px;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.footer-social {
+  font-size: 0;
+  padding-top: 5px;
+}
+
+.social-twitter {
+  display: inline-block;
+  background-position: 15px 15px;
+  background-color: #81b3d2;
+  background-image: url(../img/t.png);
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+}
+
+.social-facebook {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-position: 16px 11px;
+  background-color: #81b3d2;
+  background-image: url(../img/f.png);
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+}
+
+.social-youtube {
+  display: inline-block;
+  background-position: 13px 14px;
+  background-color: #81b3d2;
+  background-image: url(../img/youtb.png);
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+}
+
+.footer-social a:hover { background-color: #669ec0; }
+
+.footer-social a:active { background-color: #5496bd; }
+
+.social-twitter:active { background-image: url(../img/t-active.png); }
+
+.social-facebook:active { background-image: url(../img/f-active.png); }
+
+.social-youtube:active { background-image: url(../img/yout-active.png); }
+
+.copyright a:hover { background-image: url(../img/htm-acad-hov.png); }
+
+.copyright a:active { background-image: url(../img/html-acad-active.png); }

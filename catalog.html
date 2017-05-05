@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Гостиницы в Седоне</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -16,7 +17,7 @@
         <li>
           <a href="#">Фото и видео</a>
         </li>
-        <li class="third-child">
+        <li>
           <a href="#">Карта штата</a>
         </li>
         <li>
@@ -59,29 +60,28 @@
           </fieldset>
         </section>
         <section class="sorter-hotel-right-column">
-          <div class="filter-name">Стоимость в сутки (Р):</div>
-
-          <label for="price-from">от 0</label>
-          <input type="text" id="price-from" name="from" placeholder="0">
-
-          <label for="price-to">до 3000</label>
-          <input type="text" id="price-to" name="to" placeholder="3000">
-
-          <span class="range1"></span> <!--это кружочки-->
-          <span class="range2"></span>
-
-          <input type="range" id="price-id" name="price" min="0" max="3000" step="1" value="2500"
-                 title="Ползунок для выбора цены">
-          <button type="submit">Показать</button>
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
         </section>
       </form>
     </div>
 
     <section class="sorter3">
-      <h2 class="vantage">Найдено:
+      <h2 class="vantage-inner">Найдено:
         <output class="vantage">3</output>
       </h2>
-      <span>Сортировка:</span>
+      <span class="sorter3-title">Сортировка:</span>
       <ul>
         <li>
           <a>По цене</a>
@@ -93,8 +93,8 @@
           <a href="#">По рейтингу</a>
         </li>
       </ul>
-      <a href="#"></a><!--это стрелочки-->
-      <a href="#"></a> <!--это стрелочки-->
+        <a class="arrow-bottom" href="#"></a><!--это стрелочки-->
+        <a class="arrow-top" href="#"></a> <!--это стрелочки-->
     </section>
 
     <section class="list-hotels">
@@ -102,17 +102,17 @@
         <div class="hotel-image"><img src="img/amara-spa.jpg" alt="Amara Resort & Spa" width="135" height="90"></div>
         <div class="hotel-discription">
           <h2 class="vantage">Amara Resort & Spa</h2>
-          <span class="discription-text">Гостиница</span>
-          <span class="discription-text">от 3500 Р.</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <span class="discription-text1">Гостиница</span>
+          <span class="discription-text2">от 4000 Р.</span>
+          <a class="detail-description"href="#">Подробнее</a>
+          <a class="booking" href="#">Забронировать</a>
         </div>
         <div class="stars-rating">
           <span class="star"></span>
           <span class="star"></span>
           <span class="star"></span>
           <span class="star"></span>
-          <span>Рейтинг 8,5</span>
+          <span class="stars-rating-text">Рейтинг 8,5</span>
         </div>
       </article>
 
@@ -120,17 +120,17 @@
         <div class="hotel-image"><img src="img/desrt-motel.jpg" alt="Desert Quail Inn" width="135" height="90"></div>
         <div class="hotel-discription">
           <h2 class="vantage">Desert Quail Inn</h2>
-          <span class="discription-text">Мотель</span>
-          <span class="discription-text"> от 2000 Р.</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <span class="discription-text1">Мотель</span>
+          <span class="discription-text2"> от 3000 Р.</span>
+          <a class="detail-description" href="#">Подробнее</a>
+          <a class="booking" href="#">Забронировать</a>
         </div>
         <div class="stars-rating">
           <span class="star"></span>
           <span class="star"></span>
           <span class="star"></span>
           <span class="star"></span>
-          <span>Рейтинг 8,9</span>
+          <span class="stars-rating-text">Рейтинг 8,9</span>
         </div>
       </article>
 
@@ -138,24 +138,24 @@
         <div class="hotel-image"><img src="img/villa-appartament.jpg" alt="Villas at Poco Diablo" width="135" height="90"></div>
         <div class="hotel-discription">
           <h2 class="vantage">Villas at Poco Diablo</h2>
-          <span class="discription-text">Аппартамены </span>
-          <span class="discription-text">от 4000 Р.</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <span class="discription-text1">Аппартамены </span>
+          <span class="discription-text2">от 2000 Р.</span>
+          <a class="detail-description" href="#">Подробнее</a>
+          <a class="booking" href="#">Забронировать</a>
         </div>
         <div class="stars-rating">
           <span class="star"></span>
           <span class="star"></span>
           <span class="star"></span>
           <span class="star"></span>
-          <span>Рейтинг 9,2</span>
+          <span class="stars-rating-text">Рейтинг 9,2</span>
         </div>
       </article>
     </section>
   </main>
 
   <footer class="container">
-    <div class="footer-container">
+    <div class="footer-container-catalog">
       <section class="visit">
         <span>#VISITSEDONA</span>
       </section>
@@ -168,9 +168,7 @@
 
       <section class="copyright">
         <span>WEBSITE BY</span>
-        <a class="bth" href="https://htmlacademy.ru">
-          <img src="img/logo-htmlacademy.png" alt="HTML ACADEMY" width="113" height="39">
-        </a>
+        <a class="bth" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML ACADEMY</span></a>
       </section>
     </div>
   </footer>

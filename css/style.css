@@ -1,6 +1,9 @@
+html {
+  background-color: #f2f2f2;
+}
+
 body {
   width: 1200px;
-  box-shadow: 38px 0 4px 0 #f2f2f2, -38px 0 4px 0 #f2f2f2;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
@@ -10,6 +13,8 @@ body {
   text-transform: uppercase;
   line-height: 21px;
   font-weight: bold;
+  background-color: white;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .container {
@@ -123,7 +128,6 @@ a {
 
 .real-city-text {
   width: 300px;
-  text-align: -webkit-center;
   text-align: center;
   margin-left: 52px;
   font-weight: normal;
@@ -139,6 +143,7 @@ a {
 
 .real-city-text p {
   margin-top: 21px;
+  margin-right: 8px;
 }
 
 .real-city-text h2 {
@@ -353,10 +358,10 @@ a {
   display: block;
   margin-top: 47px;
   margin-left: 315px;
-  padding-bottom: 28px;
+  padding-bottom: 30px;
   padding-top: 30px;
-  padding-right: 138px;
-  padding-left: 138px;
+  padding-right: 139px;
+  padding-left: 139px;
   background-color: #766357;
   color: white;
   font-size: 21px;
@@ -377,13 +382,13 @@ a {
 }
 
 .wrap-form {
-  padding: 54px 53px 30px 53px;
+  padding: 57px 53px 30px 53px;
 }
 
 .form-block {
   position: relative;
   text-align: left;
-  padding-bottom: 30px;
+  padding-bottom: 29px;
 }
 
 .search-hotel .form-rs-adults label {
@@ -428,6 +433,7 @@ a {
   background-color: #f2f2f2;
   border: none;
   font-family: inherit;
+  font-weight: bold;
 }
 
 .search-hotel .form-block label {
@@ -439,11 +445,14 @@ a {
 .form-rs-adults {
   position: relative;
   float: left;
+  padding-top: 3px;
 }
 
 .form-rs-child {
   position: relative;
   float: right;
+  margin-right: 4px;
+  padding-top: 3px;
 }
 
 .search-hotel input::-webkit-input-placeholder {
@@ -504,7 +513,7 @@ a {
 
 .wrap-form .calendar {
   position: absolute;
-  bottom: 39px;
+  bottom: 36px;
   right: 12px;
   display: block;
   width: 22px;
@@ -596,7 +605,7 @@ a {
 }
 
 .sorter1 {
-  padding-right: 119px;
+  margin-right: 119px;
 }
 
 .sorter-hotel-left-column input {
@@ -639,6 +648,12 @@ a {
   padding-left: 37px;
 }
 
+.sorter1 fieldset,
+.sorter2 fieldset {
+  padding: 0;
+  margin: 0;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -656,7 +671,7 @@ a {
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 11px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -685,6 +700,7 @@ a {
 
 .price-controls label {
   display: inline-block;
+  font-weight: normal;
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
@@ -709,7 +725,7 @@ a {
 
 .range-controls {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 }
 
 .range-controls .scale {
@@ -749,9 +765,10 @@ a {
 }
 
 .btn-transparent {
+  font-family: "PT Sans", Arial, sans-serif;
   display: block;
   margin-left: 88px;
-  padding: 6px 30px;
+  padding: 6px 33px;
   font-size: 14px;
   line-height: 20px;
   color: white;
@@ -780,6 +797,7 @@ a {
 }
 
 .sorter3-title {
+  font-weight: normal;
   font-size: 12px;
   line-height: 18px;
 }
@@ -795,6 +813,7 @@ a {
 .sorter3 a {
   color: #E0E0E0;
   font-size: 12px;
+  font-weight: normal;
   line-height: 18px;
   text-decoration: underline;
   text-decoration-color: #81b3d2;
@@ -828,13 +847,13 @@ a {
 /*Гостиницы*/
 
 .hotel1 {
-  border-top: 2px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
   border-bottom: 2px solid #e5e5e5;
   font-size: 0;
 }
 
 .hotel2, .hotel3 {
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   font-size: 0;
 }
 
@@ -897,7 +916,7 @@ a {
 }
 
 .booking {
-  background-color: #956537;
+  background-color: #766357;
   padding: 3px 17px 5px 18px;
   margin-top: 16px;
   color: white;

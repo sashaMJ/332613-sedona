@@ -85,10 +85,10 @@ a {
 }
 
 .main-navigation a:active {
-  color: #eeeeee;
+  color: rgba(0, 0, 0, .3);
 }
 
-.main-navigation a.active {
+.information-header {
   color: #766357;
 }
 
@@ -121,8 +121,8 @@ a {
 }
 
 .real-city-left-column {
-  height: 255px;
-  width: 403px;
+  height: 256px;
+  width: 400px;
   background-color: #81b3d2;
 }
 
@@ -359,10 +359,7 @@ a {
   display: block;
   margin-top: 47px;
   margin-left: 316px;
-  padding-bottom: 28px;
-  padding-top: 30px;
-  padding-right: 140px;
-  padding-left: 140px;
+  padding: 30px 140px 28px 140px;
   background-color: #766357;
   color: white;
   font-size: 21px;
@@ -529,8 +526,7 @@ a {
   display: block;
   width: 10px;
   height: 10px;
-  background-image: url(../img/minus.png);
-  background-repeat: no-repeat;
+  background: url(../img/minus.png) no-repeat;
 }
 
 .wrap-form .plus {
@@ -540,8 +536,7 @@ a {
   display: block;
   width: 10px;
   height: 10px;
-  background-image: url(../img/plus.png);
-  background-repeat: no-repeat;
+  background: url(../img/plus.png) no-repeat;
 }
 
 .wrap-form .form-block input:hover {
@@ -601,7 +596,7 @@ a {
 .sorter-hotel-left-column {
   float: left;
   width: 700px;
-  padding-top: 27px;
+  padding-top: 25px;
   padding-left: 70px;
 }
 
@@ -618,7 +613,7 @@ a {
   position: absolute;
   content: "";
   background: url(../img/checkbox.png) no-repeat;
-  height: 20px;
+  height: 21px;
   width: 25px;
   left: 0;
   top: 24px;
@@ -659,6 +654,14 @@ a {
   content: "";
   display: table;
   clear: both;
+}
+
+.sorter1 input:disabled + label:after {
+  background-image: url(../img/block-checkbox.png);
+}
+
+.sorter1 input:checked:disabled + label:after {
+  background-image: url(../img/block-checkbox-checked.png);
 }
 
 /* Фильтр */
@@ -789,7 +792,7 @@ a {
 /*Хлебные крошки*/
 .sorter3 {
   margin-left: 72px;
-  padding-bottom: 31px;
+  padding-bottom: 29px;
   padding-top: 27px;
 }
 
@@ -812,13 +815,14 @@ a {
   margin-left: 30px;
 }
 
-.sorter3 a {
-  color: #E0E0E0;
+.sorter3 li a {
+  color: black;
+  opacity: 0.3;
   font-size: 12px;
   font-weight: normal;
   line-height: 18px;
-  text-decoration: underline;
-  text-decoration-color: #81b3d2;
+  border-bottom: 1px dotted;
+  border-color: #81b3d2;
 }
 
 .sorter3 ul {
@@ -826,6 +830,26 @@ a {
   padding-left: 37px;
 }
 
+.sorter3 ul a.active {
+  color: #c4dcea;
+  border: none;
+}
+
+.sorter3 > a.active {
+  background-image: url(../img/arrow-down-active.png);
+}
+
+.sorter3 li a:not(.active):hover {
+  color: #81b3d2;
+}
+
+.sorter3 li a:not(.active):active {
+  color: black;
+  opacity: 1;
+  border: none;
+}
+
+/*Стрелки сортировки*/
 .sorter3 .arrow-bottom {
   background-image: url(../img/arrow-down.jpg);
   width: 10px;
@@ -834,6 +858,7 @@ a {
   float: right;
   margin-right: 73px;
   margin-top: 7px;
+  border: none;
 }
 
 .sorter3 .arrow-top {
@@ -844,6 +869,7 @@ a {
   float: right;
   margin-right: 13px;
   margin-top: 8px;
+  border: none;
 }
 
 .sorter3 .arrow-bottom:hover {
@@ -854,21 +880,15 @@ a {
   background-image: url(../img/arrow-up-hov.jpg);
 }
 
-.sorter3 ul a.active {
-  color: #c4dcea;
-  text-decoration: none;
-}
-
-.sorter3 > a.active {
+.sorter3 .arrow-bottom:active {
   background-image: url(../img/arrow-down-active.png);
 }
 
-.sorter3 a:hover {
-  color: #c4dcea;
+.sorter3 .arrow-top:active {
+  background-image: url(../img/arrow-up-active.jpg);
 }
 
 /*Гостиницы*/
-
 .hotel1 {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
@@ -884,23 +904,22 @@ a {
   display: inline-block;
   vertical-align: middle;
   margin-top: 24px;
-  margin-bottom: 22px;
+  margin-bottom: 13px;
   padding-left: 73px;
-  padding-top: 2px;
 }
 
 .hotel-description {
   display: inline-block;
   vertical-align: middle;
   width: 260px;
-  padding-bottom: 29px;
+  padding-bottom: 30px;
   padding-left: 30px;
   font-size: 14px;
 }
 
 .hotel-description .vantage {
   margin-top: 28px;
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 
 }
 
@@ -938,7 +957,7 @@ a {
 
 .booking {
   background-color: #766357;
-  padding: 4px 17px 5px 18px;
+  padding: 4px 18px 6px 18px;
   margin-top: 15px;
   color: white;
 }
@@ -946,18 +965,30 @@ a {
 .stars-rating {
   display: inline-block;
   float: right;
+  margin-right: 72px;
+}
+
+.star {
+  display: inline-block;
+  background: url(../img/stars.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+}
+
+.star-box {
+  margin-top: 30px;
+  text-align: right;
 }
 
 .stars-rating-text {
-  display: inline-block;
-  float: right;
+  display: block;
   text-align: center;
   font-size: 14px;
   font-weight: normal;
-  margin-top: 96px;
-  margin-right: 75px;
+  margin-top: 34px;
   background-color: #e5e5e5;
-  padding: 3px 12px 3px 14px;
+  padding: 3px 14px 3px 14px;
 }
 
 .hotel-description .vantage:hover {
@@ -965,7 +996,7 @@ a {
 }
 
 .hotel-description .vantage:active {
-  color: #cacaca;
+  opacity: 0.3;
 }
 
 .list-hotels .detail-description:hover {
@@ -1021,11 +1052,10 @@ a {
 }
 
 .copyright a {
-  background-image: url(../img/logo-htmlacademy.png);
-  background-repeat: no-repeat;
+  background: url(../img/logo-htmlacademy.png) no-repeat;
   padding-right: 114px;
   padding-bottom: 22px;
-  padding-top: 12px;
+  padding-top: 10px;
 
 }
 
@@ -1051,38 +1081,37 @@ a {
 
 .footer-social {
   font-size: 0;
+  margin-top: 8px;
 }
 
 .social-twitter {
   display: inline-block;
-  background-position: 15px 15px;
+  background-position: 15px 16px;
   background-color: #81b3d2;
   background-image: url(../img/t.png);
   background-repeat: no-repeat;
-  width: 45px;
-  height: 45px;
+  width: 46px;
+  height: 48px;
 }
 
 .social-facebook {
   display: inline-block;
   margin-left: 5px;
   margin-right: 5px;
-  background-position: 16px 11px;
+  background-position: 17px 14px;
   background-color: #81b3d2;
-  background-image: url(../img/f.png);
-  background-repeat: no-repeat;
-  width: 45px;
-  height: 45px;
+  background: url(../img/f.png) no-repeat;
+  width: 46px;
+  height: 48px;
 }
 
 .social-youtube {
   display: inline-block;
-  background-position: 13px 14px;
+  background-position: 13px 15px;
   background-color: #81b3d2;
-  background-image: url(../img/youtb.png);
-  background-repeat: no-repeat;
-  width: 45px;
-  height: 45px;
+  background: url(../img/youtb.png) no-repeat;
+  width: 46px;
+  height: 48px;
 }
 
 .footer-social a:hover {

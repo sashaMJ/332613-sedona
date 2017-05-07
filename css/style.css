@@ -88,7 +88,7 @@ a {
   color: rgba(0, 0, 0, .3);
 }
 
-.information-header {
+.main-navigation a.active {
   color: #766357;
 }
 
@@ -436,6 +436,7 @@ a {
 
 .search-hotel .form-block label {
   display: inline-block;
+  vertical-align: baseline;
   width: 23%;
   margin-top: 9px;
 }
@@ -586,6 +587,7 @@ a {
 /* Сортировка */
 .sorter {
   background-image: url(../img/filter-background.jpg);
+  background-position-y: -57px;
   color: white;
   display: inline-block;
   width: 100%;
@@ -831,8 +833,9 @@ a {
 }
 
 .sorter3 ul a.active {
-  color: #c4dcea;
+  color: #81b3d2;
   border: none;
+  opacity: 1;
 }
 
 .sorter3 > a.active {
@@ -872,19 +875,19 @@ a {
   border: none;
 }
 
-.sorter3 .arrow-bottom:hover {
+.sorter3 .arrow-bottom:not(.active):hover {
   background-image: url(../img/arrow-down-hov.jpg);
 }
 
-.sorter3 .arrow-top:hover {
+.sorter3 .arrow-top:not(.active):hover {
   background-image: url(../img/arrow-up-hov.jpg);
 }
 
-.sorter3 .arrow-bottom:active {
+.sorter3 .arrow-bottom:not(.active):active {
   background-image: url(../img/arrow-down-active.png);
 }
 
-.sorter3 .arrow-top:active {
+.sorter3 .arrow-top:not(.active):active {
   background-image: url(../img/arrow-up-active.jpg);
 }
 
@@ -1100,7 +1103,8 @@ a {
   margin-right: 5px;
   background-position: 17px 14px;
   background-color: #81b3d2;
-  background: url(../img/f.png) no-repeat;
+  background-image: url(../img/f.png);
+  background-repeat: no-repeat;
   width: 46px;
   height: 48px;
 }
@@ -1109,7 +1113,8 @@ a {
   display: inline-block;
   background-position: 13px 15px;
   background-color: #81b3d2;
-  background: url(../img/youtb.png) no-repeat;
+  background-image: url(../img/youtb.png);
+  background-repeat: no-repeat;
   width: 46px;
   height: 48px;
 }

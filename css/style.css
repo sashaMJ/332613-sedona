@@ -153,7 +153,6 @@ a {
   margin-bottom: 23px;
   color: white;
   font-size: 21px;
-
 }
 
 .real-city-text span {
@@ -342,6 +341,15 @@ a {
   height: 267px;
 }
 
+.search-hotel form {
+  position: absolute;
+  width: 569px;
+  height: 398px;
+  margin-left: 317px;
+  background-color: white;
+  color: black;
+}
+
 .look {
   font-size: 30px;
   line-height: 24px;
@@ -368,15 +376,6 @@ a {
   text-transform: inherit;
   font-family: inherit;
   border: none;
-}
-
-.search-hotel form {
-  position: absolute;
-  width: 569px;
-  height: 398px;
-  margin-left: 317px;
-  background-color: white;
-  color: black;
 }
 
 .wrap-form {
@@ -417,6 +416,7 @@ a {
   height: 35px;
   width: 75%;
   margin-top: 1px;
+  padding-left: 18px;
   background-color: #f2f2f2;
   border: none;
   font-family: inherit;
@@ -427,11 +427,14 @@ a {
 .search-hotel .form-rs-child input {
   height: 34px;
   width: 113px;
+  font-size: 14px;
+  line-height: 26px;
+  color:black;
+  font-weight: bold;
   text-align: center;
   background-color: #f2f2f2;
   border: none;
   font-family: inherit;
-  font-weight: bold;
 }
 
 .search-hotel .form-block label {
@@ -456,57 +459,48 @@ a {
 
 .search-hotel input::-webkit-input-placeholder {
   font-size: 14px;
-  line-height: 26px;
   color: black;
   font-weight: bold;
-  padding-left: 18px;
   text-transform: uppercase;
-  padding-top: 10px;
+  line-height: 38px;
   font-family: inherit;
 }
 
 .search-hotel input:-moz-placeholder,
 .search-hotel input::-moz-placeholder {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 38px;,
   color: black;
   font-weight: bold;
-  padding-left: 18px;
   text-transform: uppercase;
-  padding-top: 10px;
   font-family: inherit;
+  opacity: 1;
 }
 
 .search-hotel input:-ms-input-placeholder {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 38px;,
   color: black;
   font-weight: bold;
-  padding-left: 18px;
   text-transform: uppercase;
-  padding-top: 10px;
   font-family: inherit;
 }
 
 .search-hotel input:placeholder {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 38px;,
   color: black;
   font-weight: bold;
-  padding-left: 18px;
   text-transform: uppercase;
-  padding-top: 10px;
   font-family: inherit;
 }
 
 .search-hotel input::placeholder {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 38px;,
   color: black;
   font-weight: bold;
-  padding-left: 18px;
   text-transform: uppercase;
-  padding-top: 10px;
   font-family: inherit;
 }
 
@@ -723,6 +717,7 @@ a {
 .price-controls input {
   width: 50px;
   padding-top: 0;
+  line-height: 36px;
   color: inherit;
   font: inherit;
   background: none;
@@ -854,7 +849,7 @@ a {
 
 /*Стрелки сортировки*/
 .sorter3 .arrow-bottom {
-  background-image: url(../img/arrow-down.jpg);
+  background-image: url(../img/arrow-down.png);
   width: 10px;
   height: 10px;
   display: inline-block;
@@ -876,11 +871,11 @@ a {
 }
 
 .sorter3 .arrow-bottom:not(.active):hover {
-  background-image: url(../img/arrow-down-hov.jpg);
+  background-image: url(../img/arrow-down-hov.png);
 }
 
 .sorter3 .arrow-top:not(.active):hover {
-  background-image: url(../img/arrow-up-hov.jpg);
+  background-image: url(../img/arrow-up-hov.png);
 }
 
 .sorter3 .arrow-bottom:not(.active):active {
@@ -888,7 +883,7 @@ a {
 }
 
 .sorter3 .arrow-top:not(.active):active {
-  background-image: url(../img/arrow-up-active.jpg);
+  background-image: url(../img/arrow-up-active.png);
 }
 
 /*Гостиницы*/
@@ -914,7 +909,7 @@ a {
 .hotel-description {
   display: inline-block;
   vertical-align: middle;
-  width: 260px;
+  width: 261px;
   padding-bottom: 30px;
   padding-left: 30px;
   font-size: 14px;
@@ -923,7 +918,6 @@ a {
 .hotel-description .vantage {
   margin-top: 28px;
   margin-bottom: 12px;
-
 }
 
 .description-text1,

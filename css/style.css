@@ -420,6 +420,7 @@ a {
   background-color: #f2f2f2;
   border: none;
   font-family: inherit;
+  line-height: 38px;
   box-sizing: border-box;
 }
 
@@ -429,7 +430,7 @@ a {
   width: 113px;
   font-size: 14px;
   line-height: 26px;
-  color:black;
+  color: black;
   font-weight: bold;
   text-align: center;
   background-color: #f2f2f2;
@@ -462,14 +463,12 @@ a {
   color: black;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 38px;
   font-family: inherit;
 }
 
 .search-hotel input:-moz-placeholder,
 .search-hotel input::-moz-placeholder {
   font-size: 14px;
-  line-height: 38px;,
   color: black;
   font-weight: bold;
   text-transform: uppercase;
@@ -479,7 +478,6 @@ a {
 
 .search-hotel input:-ms-input-placeholder {
   font-size: 14px;
-  line-height: 38px;,
   color: black;
   font-weight: bold;
   text-transform: uppercase;
@@ -488,7 +486,6 @@ a {
 
 .search-hotel input:placeholder {
   font-size: 14px;
-  line-height: 38px;,
   color: black;
   font-weight: bold;
   text-transform: uppercase;
@@ -497,7 +494,6 @@ a {
 
 .search-hotel input::placeholder {
   font-size: 14px;
-  line-height: 38px;,
   color: black;
   font-weight: bold;
   text-transform: uppercase;
@@ -675,7 +671,6 @@ a {
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
-  margin-left: 4px;
 }
 
 .price-controls {
@@ -717,7 +712,7 @@ a {
 .price-controls input {
   width: 50px;
   padding-top: 0;
-  line-height: 36px;
+  height: 36px;
   color: inherit;
   font: inherit;
   background: none;
@@ -1053,7 +1048,6 @@ a {
   padding-right: 114px;
   padding-bottom: 22px;
   padding-top: 10px;
-
 }
 
 .copyright span {

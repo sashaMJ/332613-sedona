@@ -342,12 +342,63 @@ a {
 }
 
 .search-hotel form {
+  display: none;
   position: absolute;
   width: 569px;
   height: 398px;
   margin-left: 317px;
   background-color: white;
   color: black;
+  overflow-y: hidden;
+  z-index: 1;
+}
+
+.search-hotel form.show {
+  animation: form-animation-open 1s ease-in forwards;
+}
+
+.search-hotel form.hide {
+  animation: form-animation-close 1s ease-out forwards;
+}
+
+@keyframes form-animation-open {
+  0% {
+    height: 0
+  }
+  40% {
+    height: 398px
+  }
+
+  50% {
+    height: 300px
+  }
+  60% {
+    height: 398px
+  }
+
+  70% {
+    height: 335px
+  }
+  80% {
+    height: 398px
+  }
+
+  90% {
+    height: 370px
+  }
+  100% {
+    height: 398px
+  }
+}
+
+@keyframes form-animation-close {
+  to {
+    height: 0;
+  }
+}
+
+.map {
+  height: 593px;
 }
 
 .look {
@@ -365,7 +416,7 @@ a {
 
 .search-hotel button[type="button"] {
   display: block;
-  margin-top: 47px;
+  margin-top: 50px;
   margin-left: 316px;
   padding: 30px 140px 28px 140px;
   background-color: #766357;
@@ -376,6 +427,7 @@ a {
   text-transform: inherit;
   font-family: inherit;
   border: none;
+  cursor: pointer;
 }
 
 .wrap-form {

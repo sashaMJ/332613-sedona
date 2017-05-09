@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header container">
@@ -104,30 +104,30 @@
 
       <button type="button">Поиск гостиницы в Седоне</button>
 
-      <form class="hide" action="https://echo.htmlacademy.ru" method="post">
+      <form action="https://echo.htmlacademy.ru" method="post">
         <div class="wrap-form">
           <div class="form-block">
             <label for="check-in">Дата заезда:</label>
             <input type="text" name="data" id="check-in" placeholder="24 апреля 2017" required>
-            <div class="calendar"></div>
+            <div class="calendar"><span class="visually-hidden">Календарь</span></div>
           </div>
           <div class="form-block">
             <label for="check-out">Дата выезда:</label>
             <input type="text" name="data" id="check-out" placeholder="4 июля 2017" required>
-            <div class="calendar"></div>
+            <div class="calendar"><span class="visually-hidden">Календарь</span></div>
           </div>
           <div class="form-rs-adults">
             <label for="grown-id">Взрослые:</label>
             <input type="text" name="grown" id="grown-id" value="2" required>
-            <div class="minus"></div>
-            <div class="plus"></div>
+            <div class="minus"><span class="visually-hidden">Минус</span></div>
+            <div class="plus"><span class="visually-hidden">Плюс</span></div>
 
           </div>
           <div class="form-rs-child">
             <label for="children-id">Дети:</label>
             <input type="text" name="children" id="children-id" value="0" required>
-            <div class="minus"></div>
-            <div class="plus"></div>
+            <div class="minus"><span class="visually-hidden">Минус</span></div>
+            <div class="plus"><span class="visually-hidden">Плюс</span></div>
           </div>
         </div>
         <button type="submit">Найти</button>
@@ -155,7 +155,8 @@
       </section>
     </div>
   </footer>
-  <script src="js/form.js"></script>
-  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A35c9d5b060473782d14bffa61d91a6b0d9dfa821bb0f7aa5dcf38f0230f7f5aa&amp;width=1200&amp;height=593&amp;id=map&amp;lang=ru_RU&amp;scroll=true"></script>
+  <script src="js/form.min.js"></script>
+  <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A35c9d5b060473782d14bffa61d91a6b0d9dfa821bb0f7aa5dcf38f0230f7f5aa&amp;width=1200&amp;height=593&amp;id=map&amp;lang=ru_RU&amp;scroll=true"></script>
 </body>
 </html>

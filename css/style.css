@@ -184,6 +184,7 @@ a {
 .souvenirs {
   text-align: center;
   display: inline-block;
+  vertical-align: middle;
   width: 33.33333%;
   font-size: 14px;
 }
@@ -284,6 +285,7 @@ a {
 .area {
   text-align: center;
   display: inline-block;
+  vertical-align: top;
   width: 33.33333%;
   font-size: 14px;
   padding-top: 30px;
@@ -342,7 +344,6 @@ a {
 }
 
 .search-hotel form {
-  display: none;
   position: absolute;
   width: 569px;
   height: 398px;
@@ -354,11 +355,12 @@ a {
 }
 
 .search-hotel form.show {
+  display: block;
   animation: form-animation-open 1s ease-in forwards;
 }
 
 .search-hotel form.hide {
-  animation: form-animation-close 1s ease-out forwards;
+  display: none;
 }
 
 @keyframes form-animation-open {
@@ -399,7 +401,7 @@ a {
 
 .map {
   height: 593px;
-  background-color: #d0e5c9;
+  background-image: url(../img/map.jpg);
 }
 
 .look {
@@ -638,7 +640,7 @@ a {
   color: white;
   display: inline-block;
   width: 100%;
-  height: 216px;
+  min-height: 216px;
   font-size: 0;
 }
 
@@ -677,6 +679,7 @@ a {
 .sorter1,
 .sorter2 {
   display: inline-block;
+  vertical-align: top;
   border: none;
 }
 

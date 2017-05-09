@@ -561,6 +561,7 @@ a {
   width: 22px;
   height: 22px;
   background-image: url(../img/calendar.png);
+  cursor: pointer;
 }
 
 .wrap-form .minus {
@@ -571,6 +572,7 @@ a {
   width: 10px;
   height: 10px;
   background: url(../img/minus.png) no-repeat;
+  cursor: pointer;
 }
 
 .wrap-form .plus {
@@ -581,6 +583,7 @@ a {
   width: 10px;
   height: 10px;
   background: url(../img/plus.png) no-repeat;
+  cursor: pointer;
 }
 
 .wrap-form .form-block input:hover {
@@ -663,6 +666,7 @@ a {
   width: 25px;
   left: 0;
   top: 24px;
+  cursor: pointer;
 }
 
 .sorter1 input:checked + label::after,
@@ -1003,7 +1007,7 @@ a {
 
 .booking {
   background-color: #766357;
-  padding: 4px 18px 6px 18px;
+  padding: 5px 18px 6px 18px;
   margin-top: 15px;
   color: white;
 }

@@ -92,7 +92,7 @@ a {
   color: #766357;
 }
 
-/*Основное содержание главное страницы*/
+/*Основное содержание главной страницы*/
 .sedona-town {
   padding-bottom: 39px;
   padding-top: 39px;
@@ -399,6 +399,7 @@ a {
 
 .map {
   height: 593px;
+  background-color: #d0e5c9;
 }
 
 .look {
@@ -630,6 +631,7 @@ a {
 .sorter {
   background-image: url(../img/filter-background.jpg);
   background-position-y: -57px;
+  background-color: #908782;
   color: white;
   display: inline-block;
   width: 100%;

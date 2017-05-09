@@ -7,10 +7,3 @@ btn.addEventListener("click", function () {
   classList.toggle("show");
   classList.toggle("hide");
 });
-
-
-
-
-
-
-

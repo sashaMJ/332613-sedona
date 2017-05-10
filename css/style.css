@@ -306,7 +306,7 @@ a {
 }
 
 .advantage2 h2 {
-  width: 160px;
+  width: 158px;
   margin-left: 120px;
   margin-top: 18px;
   margin-bottom: 23px;
@@ -469,7 +469,7 @@ a {
   font-family: inherit;
 }
 
-.search-hotel .form-block input {
+.form-block input {
   height: 35px;
   width: 75%;
   margin-top: 1px;
@@ -495,7 +495,7 @@ a {
   font-family: inherit;
 }
 
-.search-hotel .form-block label {
+.form-block label {
   display: inline-block;
   vertical-align: baseline;
   width: 23%;

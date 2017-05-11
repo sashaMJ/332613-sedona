@@ -65,8 +65,8 @@ a {
   margin-left: 73px;
 }
 
-.main-navigation ul li:nth-child(3),
-.main-navigation ul li:nth-child(4) {
+.main-navigation li:nth-child(3),
+.main-navigation li:nth-child(4) {
   text-align: right;
 }
 
@@ -223,7 +223,7 @@ a {
 }
 
 .bridge-right-column {
-  height: 256px;
+  min-height: 256px;
   width: 400px;
   background-color: #81b3d2;
 }
